@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .container {
+        position: relative;
+        height: 100vh;
+      }
+
+      .container div {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        outline: 2px solid red;
+        padding: 25px;
+      }
+
+      h1 {
+        color: springgreen;
+      }
+
+      .btn {
+        background-color: crimson;
+        color: azure;
+        height: 25px;
+        margin-left: 42.5%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Node-Express Calculator</h1>
+        <form action="/" method="post">
+          <p>
+            1st Number:
+            <input type="text" name="Num_1" placeholder="Enter a Number" />
+          </p>
+          <p>
+            2nd Number:
+            <input type="text" name="Num_2" placeholder="Enter a Number" />
+          </p>
+          <button class="btn" type="submit" name="submit">Add</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
